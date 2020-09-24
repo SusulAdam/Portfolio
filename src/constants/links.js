@@ -25,13 +25,18 @@ const data = [
 ]
 
 const tempLinks = data.map(link => {
-  ;<li key={data.id}>
-    <Link to={data.url}>{data.text}</Link>
-  </li>
+  return (
+    <li key={link.id}>
+      <Link to={link.url}>{link.text}</Link>
+    </li>
+  )
 })
-
-const links = () => {
-  return <ul>{tempLinks}</ul>
+const PageLinks = ({ styleClass }) => {
+  return (
+    <ul className={`page-links ${styleClass ? styleClass : ""}`}>
+      {tempLinks}
+    </ul>
+  )
 }
 
-export default links
+export default PageLinks
