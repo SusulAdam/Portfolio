@@ -22,8 +22,8 @@ const icon = icons.map(icon => {
   )
 })
 
-const ContactIcons = () => {
-  return <ul className="icons">{icon}</ul>
+const ContactIcons = ({ contactStyle }) => {
+  return <ul className={`icons ${contactStyle ? contactStyle : ""}`}>{icon}</ul>
 }
 
 export default ContactIcons

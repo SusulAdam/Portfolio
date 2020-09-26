@@ -2,12 +2,13 @@
   background-color: $mainBackgroundColor;
   width: 100%;
   height: calc(100vh - 68px);
+  overflow: hidden;
 
   .main-information {
     .main-information__name-info {
       font-family: $mainFont;
       font-size: 45px;
-      padding: 65px 0 25px 12px;
+      padding: 85px 0 25px 12px;
       font-weight: 700;
     }
 
@@ -46,7 +47,6 @@
 
 @media (min-width: 400px) {
   .home {
-    padding: 50px 0 0 0;
     display: flex;
     justify-content: center;
   }
@@ -54,11 +54,9 @@
 
 @media (max-height: 430px) and (min-width: 600px) {
   .home {
-    padding: 20px 0 0 0;
-
     .main-information {
       .main-information__name-info {
-        padding: 0 0 10px;
+        padding: 25px 0 10px;
       }
 
       .main-information__proffesion-info {
@@ -80,12 +78,12 @@
 
     .main-information {
       .main-information__name-info {
-        padding: 0px 0 25px 12px;
+        padding: 110px 0 25px 12px;
       }
     }
 
     .home__photo {
-      margin-top: 40px;
+      margin-top: 80px;
       display: flex;
       width: 300px;
       height: 350px;
