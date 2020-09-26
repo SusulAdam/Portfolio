@@ -2,7 +2,7 @@
   display: flex;
   justify-content: center;
   align-items: start;
-  height: calc(100vh - 68px);
+  height: calc(100vh - 180px);
   background-color: $mainBackgroundColor;
   font-family: $mainFont;
 
@@ -131,6 +131,7 @@
   .contact-page {
     display: flex;
     align-items: center;
+
     .contact-form {
       margin-top: 10px;
 
@@ -151,5 +152,17 @@
         }
       }
     }
+  }
+}
+
+.contact-page {
+  @media (max-height: 623px) {
+    height: 450px;
+  }
+}
+
+.contact-page {
+  @media (max-height: 450px) {
+    height: 300px;
   }
 }
