@@ -31,7 +31,7 @@ const Home = () => {
         </h4>
 
         <Link to="contact">
-          <button className="main-information__contact">Hire me</button>
+          <button className="main-information__contact btn">Hire me</button>
         </Link>
 
         <ContactIcons />

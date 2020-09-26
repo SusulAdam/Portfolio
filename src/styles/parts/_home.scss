@@ -21,21 +21,9 @@
 
     a {
       .main-information__contact {
-        background-color: $mainContrastColor;
         margin: 12px;
         padding: 20px 40px 20px 40px;
-        cursor: pointer;
-        border: none;
-        border-radius: 5px;
-        color: #ffffff;
         font-size: 20px;
-        font-weight: 700;
-        letter-spacing: 1.3px;
-        transition: 0.3s;
-
-        &:hover {
-          background-color: lighten($mainContrastColor, 10%);
-        }
       }
     }
   }

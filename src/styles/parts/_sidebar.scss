@@ -36,12 +36,24 @@
           color: $mainNavigationColor;
           font-weight: 700;
           transition: 0.4s;
+          text-transform: capitalize;
+
+          &:hover {
+            border-bottom: 2px solid $mainContrastColor;
+            color: $mainContrastColor;
+            transition: 0.2s;
+          }
         }
       }
     }
 
     .sidebar-icons {
-      padding-top: 10px;
+      margin-left: 0;
+
+      .icon {
+        font-size: 30px;
+        color: darken($mainContrastColor, 5%);
+      }
     }
   }
 }
