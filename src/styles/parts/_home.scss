@@ -1,0 +1,174 @@
+.home {
+  background-color: $mainBackgroundColor;
+  width: 100%;
+  height: calc(100vh - 68px);
+
+  .main-information {
+    .main-information__name-info {
+      font-family: $mainFont;
+      font-size: 45px;
+      padding: 65px 0 25px 12px;
+      font-weight: 700;
+    }
+
+    .main-information__proffesion-info {
+      color: $mainSecondaryColor;
+      font-family: $mainFont;
+      font-size: 25px;
+      padding: 0 10px 40px 12px;
+    }
+
+    a {
+      .main-information__contact {
+        background-color: $mainContrastColor;
+        margin: 12px;
+        padding: 20px 40px 20px 40px;
+        cursor: pointer;
+        border: none;
+        border-radius: 5px;
+        color: #ffffff;
+        font-size: 20px;
+        font-weight: 700;
+        letter-spacing: 1.3px;
+        transition: 0.3s;
+
+        &:hover {
+          background-color: lighten($mainContrastColor, 10%);
+        }
+      }
+    }
+  }
+
+  .home__photo {
+    display: none;
+  }
+}
+
+@media (min-width: 400px) {
+  .home {
+    padding: 50px 0 0 0;
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media (max-height: 430px) and (min-width: 600px) {
+  .home {
+    padding: 20px 0 0 0;
+
+    .main-information {
+      .main-information__name-info {
+        padding: 0 0 10px;
+      }
+
+      .main-information__proffesion-info {
+        padding: 10px 0 10px 0;
+      }
+
+      a {
+        .main-information__contact {
+          margin: 20px 0 10px 0;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 600px) and (min-height: 430px) {
+  .home {
+    align-items: start;
+
+    .main-information {
+      .main-information__name-info {
+        padding: 0px 0 25px 12px;
+      }
+    }
+
+    .home__photo {
+      margin-top: 40px;
+      display: flex;
+      width: 300px;
+      height: 350px;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .home {
+    .main-information {
+      .main-information__name-info {
+        padding: 130px 0 25px 12px;
+      }
+    }
+
+    .home__photo {
+      width: 400px;
+      height: 500px;
+    }
+  }
+}
+
+@media screen and (min-width: 1100px) {
+  .home {
+    padding: 0;
+
+    .main-information {
+      margin: 45px 130px 0 0;
+    }
+
+    .home__photo {
+      margin-top: 60px;
+    }
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .home {
+    .main-information {
+      margin: 65px 130px 0 0;
+
+      .main-information__name-info {
+        font-size: 60px;
+      }
+
+      .main-information__proffesion-info {
+        font-size: 35px;
+      }
+
+      a {
+        .main-information__contact {
+          padding: 20px 60px 20px 60px;
+        }
+      }
+    }
+
+    .home__photo {
+      margin-top: 80px;
+    }
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .home {
+    .main-information {
+      .main-information__name-info {
+        font-size: 65px;
+      }
+
+      .main-information__proffesion-info {
+        font-size: 38px;
+      }
+
+      a {
+        .main-information__contact {
+          padding: 20px 65px 20px 65px;
+        }
+      }
+    }
+
+    .home__photo {
+      width: 550px;
+      height: 650px;
+    }
+  }
+}
