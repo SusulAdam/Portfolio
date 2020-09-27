@@ -14,24 +14,117 @@
     padding-top: 50px;
 
     .about__image {
-      width: 50vw;
+      width: 40vw;
       max-width: 350px;
     }
 
     .about__information-container {
-      padding-top: 50px;
+      padding: 50px 0 0 30px;
       width: 50vw;
       max-width: 450px;
 
       .about__main-information {
+        .about__title {
+          font-size: 30px;
+          font-weight: 700;
+          //   position: relative;
+          padding-bottom: 5px;
+          border-bottom: 2px solid $mainContrastColor;
+          width: 138px;
+
+          //   &::after {
+          //     position: absolute;
+          //     content: "";
+          //     left: 20px;
+          //     bottom: 0;
+          //     width: 140px;
+          //     height: 2px;
+          //     background-color: $mainContrastColor;
+          //   }
+        }
+
         .about__split-information {
           font-family: $mainFont;
-          text-align: center;
+          color: $mainSecondaryColor;
           padding-top: 20px;
           font-size: 20px;
+          line-height: 1.3;
 
-          &:nth-child(2) {
+          &:nth-child(3) {
             font-weight: 700;
+          }
+        }
+      }
+
+      .technologies {
+        padding-top: 10px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        li {
+          margin-top: 10px;
+          border: 2px outset $mainContrastColor;
+          margin-right: 10px;
+          padding: 5px 13px 5px 13px;
+          font-size: 15px;
+          font-weight: 500;
+          background-color: #ffffff;
+          text-transform: uppercase;
+
+          &:last-child {
+            margin: 10px 0 0 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 900px) {
+  .about {
+    .about__container {
+      padding-top: 20px;
+
+      .about__information-container {
+        padding: 20px 0 0 30px;
+
+        .about__main-information {
+          .about__split-information {
+            padding-top: 15px;
+            font-size: 17px;
+          }
+        }
+
+        .technologies {
+          li {
+            font-size: 13px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 730px) {
+  .about {
+    .about__container {
+      width: 95vw;
+      max-width: 100%;
+
+      .about__image {
+        display: none;
+      }
+
+      .about__information-container {
+        width: 95vw;
+        padding: 20px 0 0 0;
+        max-width: 100%;
+
+        .about__main-information {
+          .about__title {
+            text-align: center;
+            padding: 0;
           }
         }
       }

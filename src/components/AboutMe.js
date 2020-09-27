@@ -1,6 +1,7 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import Image from "gatsby-image"
+import Technologies from "../constants/technologies"
 
 const query = graphql`
   {
@@ -29,20 +30,22 @@ const AboutMe = () => {
         </div>
         <div className="about__information-container">
           <div className="about__main-information">
+            <h5 className="about__title">About Me</h5>
             <p className="about__split-information">
-              My name is Adam. I am engineer. Mainly I deal with frontend
-              programming. Sometimes I also like to look at the data and
-              calculate something.
+              Hi! My name is Adam and I'm an engineer. Mainly I deal with
+              frontend programming. Moreover i like to analyze the data.
             </p>
             <p className="about__split-information">
-              Working with me, we will create a joint team and develop a goal.
+              While working with me, we will create a joint team and develop a
+              goal.
             </p>
             <p className="about__split-information">
-              My involvement in the project is always high, based on modern
-              technologies I appreciate the good appearance of the application
-              and its functionality. My applications are always refined in every
-              possible way
+              My involvement in the project is always on the highest level. I
+              work based on the latest technologies. I care about good
+              appearance of the application and its functionality. My
+              applications are always refined in every possible way.
             </p>
+            <Technologies />
           </div>
           <div className="about__language-information"></div>
         </div>

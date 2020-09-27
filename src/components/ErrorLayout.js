@@ -8,6 +8,7 @@ const ErrorLayout = () => {
         <p className="error__title">Error 404</p>
         <p className="error__title ">
           This page isn't available. Sorry about that. Please back to the home
+          page
         </p>
       </div>
 
