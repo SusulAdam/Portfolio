@@ -7,7 +7,7 @@ const query = graphql`
   {
     file(relativePath: { eq: "myPhoto2.png" }) {
       childImageSharp {
-        fluid(sizes: "10w") {
+        fluid {
           ...GatsbyImageSharpFluid
         }
       }

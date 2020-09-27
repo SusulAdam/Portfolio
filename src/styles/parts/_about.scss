@@ -1,0 +1,40 @@
+.about {
+  height: calc(100vh - 180px);
+  background-color: $mainBackgroundColor;
+  font-family: $mainFont;
+  display: flex;
+  justify-content: center;
+
+  .about__container {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    width: 90vw;
+    max-width: 900px;
+    padding-top: 50px;
+
+    .about__image {
+      width: 50vw;
+      max-width: 350px;
+    }
+
+    .about__information-container {
+      padding-top: 50px;
+      width: 50vw;
+      max-width: 450px;
+
+      .about__main-information {
+        .about__split-information {
+          font-family: $mainFont;
+          text-align: center;
+          padding-top: 20px;
+          font-size: 20px;
+
+          &:nth-child(2) {
+            font-weight: 700;
+          }
+        }
+      }
+    }
+  }
+}
