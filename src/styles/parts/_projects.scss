@@ -46,9 +46,9 @@
         background-color: rgba(white, 1);
         word-spacing: 10px;
         width: 698px;
-        height: 200px;
+        height: 230px;
         position: absolute;
-        bottom: 80px;
+        bottom: 60px;
         right: 0;
         padding: 40px 20px 20px 20px;
         z-index: 3;
@@ -91,6 +91,16 @@
             font-weight: 700;
             color: rgb(65, 65, 65);
             margin-right: 10px;
+          }
+        }
+
+        .project__links {
+          padding: 5px 0 0 10px;
+
+          a {
+            font-size: 25px;
+            padding-right: 5px;
+            color: darken($mainContrastColor, 10%);
           }
         }
       }
@@ -144,7 +154,7 @@
           padding: 20px;
           width: 410px;
           left: 0;
-          bottom: 50px;
+          bottom: 25px;
 
           .project__information {
             font-size: 14px;
@@ -190,6 +200,7 @@
             color: black;
 
             .project__technologies {
+              padding-top: 10px;
               width: 170px;
 
               .project__technology {

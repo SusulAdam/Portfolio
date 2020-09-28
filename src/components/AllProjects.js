@@ -1,6 +1,8 @@
 import React from "react"
 import { graphql, useStaticQuery } from "gatsby"
 import Image from "gatsby-image"
+import { AiFillGithub } from "react-icons/ai"
+import { CgLink } from "react-icons/cg"
 
 const getImages = graphql`
   {
@@ -81,6 +83,17 @@ const AllProjects = () => {
                 <li className="project__technology">scss</li>
                 <li className="project__technology">api</li>
               </ul>
+              <div className="project__links">
+                <a
+                  className="project__link"
+                  href="https://github.com/SusulAdam/Piggybank-Finance_Application-React"
+                >
+                  <AiFillGithub className="project__link" />
+                </a>
+                <a href="https://piggy-bank-app.netlify.app/">
+                  <CgLink className="project__link" />
+                </a>
+              </div>
             </p>
           </div>
         </article>
@@ -99,7 +112,15 @@ const AllProjects = () => {
                 <li className="project__technology">gatsby</li>
                 <li className="project__technology">javascript</li>
                 <li className="project__technology">scss</li>
-              </ul>
+              </ul>{" "}
+              <div className="project__links">
+                <a
+                  className="project__link"
+                  href="https://github.com/SusulAdam/Portfolio"
+                >
+                  <AiFillGithub className="project__link" />
+                </a>
+              </div>
             </p>
           </div>
         </article>
@@ -112,14 +133,25 @@ const AllProjects = () => {
             <h3 className="project__title">Javascript project</h3>
             <p className="project__information">
               The project consists in showing the temperature, humidity,
-              pressure and a picture of the weather (e.g. clouds). To find
-              weather information you can use 'input' and write a city name or
-              you can click a microphone and say a city name then application
-              find automatic weather information.
+              pressure and a picture of the weather. To find weather information
+              you can use 'input' and write a city name or you can click a
+              microphone and say a city name then application find automatic
+              weather information.
               <ul className="project__technologies">
                 <li className="project__technology">javascript</li>
                 <li className="project__technology">scss</li>
               </ul>
+              <div className="project__links">
+                <a
+                  className="project__link"
+                  href="https://github.com/SusulAdam/Weather_Project-JS_API"
+                >
+                  <AiFillGithub className="project__link" />
+                </a>
+                <a href="https://weather-application-vanillajs.netlify.app/">
+                  <CgLink className="project__link" />
+                </a>
+              </div>
             </p>
           </div>
         </article>
@@ -141,6 +173,14 @@ const AllProjects = () => {
                 <li className="project__technology">scss</li>
                 <li className="project__technology">leaflet-librabry</li>
               </ul>
+              <div className="project__links">
+                <a
+                  className="project__link"
+                  href="https://github.com/SusulAdam/Map-Leaflet_JS"
+                >
+                  <AiFillGithub className="project__link" />
+                </a>
+              </div>
             </p>
           </div>
         </article>
@@ -160,6 +200,17 @@ const AllProjects = () => {
                 <li className="project__technology">javascript</li>
                 <li className="project__technology">scss</li>
               </ul>
+              <div className="project__links">
+                <a
+                  className="project__link"
+                  href="https://github.com/SusulAdam/ToDo_List_Project-JS"
+                >
+                  <AiFillGithub className="project__link" />
+                </a>
+                <a href="https://to-do-project.netlify.app/">
+                  <CgLink className="project__link" />
+                </a>
+              </div>
             </p>
           </div>
         </article>
@@ -182,6 +233,17 @@ const AllProjects = () => {
                 <li className="project__technology">python</li>
                 <li className="project__technology">django</li>
               </ul>
+              <div className="project__links">
+                <a
+                  className="project__link"
+                  href="https://github.com/SusulAdam/foodbrainers-Django-Python"
+                >
+                  <AiFillGithub className="project__link" />
+                </a>
+                <a href="https://bref-monsieur-61565.herokuapp.com/">
+                  <CgLink className="project__link" />
+                </a>
+              </div>
             </p>
           </div>
         </article>
@@ -201,6 +263,14 @@ const AllProjects = () => {
               <ul className="project__technologies">
                 <li className="project__technology">python</li>
               </ul>
+              <div className="project__links">
+                <a
+                  className="project__link"
+                  href="https://github.com/SusulAdam/Python_OPP_Pandas_Data_Analyse"
+                >
+                  <AiFillGithub className="project__link" />
+                </a>
+              </div>
             </p>
           </div>
         </article>
