@@ -2,6 +2,7 @@ import { useStaticQuery, graphql, Link } from "gatsby"
 import React from "react"
 import Image from "gatsby-image"
 import ContactIcons from "../constants/contactIcons"
+import Typical from "react-typical"
 
 const query = graphql`
   {
@@ -27,7 +28,11 @@ const Home = () => {
       <article className="main-information">
         <h1 className="main-information__name-info">I'm Adam</h1>
         <h4 className="main-information__proffesion-info">
-          Frontend developer
+          <Typical
+            steps={["engineer", 1500, "frontend developer", 4000]}
+            wrapper="p"
+            loop={Infinity}
+          />
         </h4>
 
         <Link to="contact">

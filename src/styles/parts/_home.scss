@@ -16,7 +16,8 @@
       color: $mainSecondaryColor;
       font-family: $mainFont;
       font-size: 25px;
-      padding: 0 10px 40px 12px;
+      padding: 0 0px 40px 12px;
+      width: 370px;
     }
 
     .icons {
@@ -48,6 +49,12 @@
   .home {
     display: flex;
     justify-content: center;
+
+    .main-information {
+      .main-information__proffesion-info {
+        width: 240px;
+      }
+    }
   }
 }
 
@@ -130,6 +137,7 @@
 
       .main-information__proffesion-info {
         font-size: 35px;
+        width: 370px;
       }
 
       a {

@@ -93,7 +93,7 @@ const AllProjects = () => {
             <h3 className="project__title">Gatsby project</h3>
             <p className="project__information">
               Build a portfolio website, advertise your business and increase
-              your profits gain more customers. <br />
+              your profits and gain more customers. <br />
               Don't waste your time, contact me and we'll talk about it.
               <ul className="project__technologies">
                 <li className="project__technology">gatsby</li>
