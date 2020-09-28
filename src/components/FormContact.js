@@ -5,14 +5,16 @@ const FormContact = () => {
     <section className="contact-page">
       <article className="contact-form">
         <h3 className="contact-form__title">get in touch</h3>
-        <form>
+        <form action="https://formspree.io/xaylnorz" method="POST">
           <div className="contact-form__form-group">
             <input
+              name="name"
               type="text"
               placeholder="name"
               className="contact-form__form-control"
             />
             <input
+              name="email"
               type="email"
               placeholder="email"
               className="contact-form__form-control"
@@ -24,7 +26,6 @@ const FormContact = () => {
               rows="5"
             ></textarea>
             <button type="sumbit" className="contact-form__sumbit btn">
-              {" "}
               sumbit here
             </button>
           </div>
