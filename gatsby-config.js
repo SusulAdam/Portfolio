@@ -5,8 +5,15 @@
  */
 
 module.exports = {
-  /* Your site config here */
+  siteMetadata: {
+    title: "Adam Susul portfolio",
+    description: "This is Adam Susul portfolio site",
+    author: "Adam Susul",
+    image: "/portofolioApp.jpg",
+    siteUrl: "https://adamsusul.netlify.app",
+  },
   plugins: [
+    `gatsby-plugin-sitemap`,
     `gatsby-plugin-sass`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
