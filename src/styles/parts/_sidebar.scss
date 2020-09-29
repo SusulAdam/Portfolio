@@ -54,6 +54,9 @@
       .icon {
         font-size: 30px;
         color: darken($mainContrastColor, 5%);
+        a {
+          color: $mainContrastColor;
+        }
       }
     }
   }
