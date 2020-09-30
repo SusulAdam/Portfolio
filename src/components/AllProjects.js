@@ -193,7 +193,7 @@ const AllProjects = () => {
           <div className="project__informations">
             <h3 className="project__title">Javascript project</h3>
             <p className="project__information">
-              Project consist on add, edit and delete new tasks. The projecy
+              Project consist on add, edit and delete new tasks. The project
               includes the possiblity of adding and editing a task execution.
               Project don't have data base.
               <ul className="project__technologies">

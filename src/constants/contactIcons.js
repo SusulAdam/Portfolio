@@ -12,7 +12,7 @@ const icons = [
     id: 2,
     className: "icon linkedin",
     name: <AiFillLinkedin />,
-    link: "www.linkedin.com/in/adam-susuł",
+    link: "https://www.linkedin.com/in/adam-susuł/",
   },
   {
     id: 3,
