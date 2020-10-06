@@ -177,3 +177,14 @@
     }
   }
 }
+
+@media (max-height: 420px) {
+  .home {
+    .main-information {
+      .main-information__name-info {
+        padding-top: 20px;
+        padding-left: 0px;
+      }
+    }
+  }
+}

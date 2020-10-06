@@ -13,6 +13,19 @@
     max-width: 35rem;
     background-color: #ffffff;
     border-radius: 10px;
+    opacity: 0;
+    animation: slideUpContact 0.7s ease-in-out forwards;
+
+    @keyframes slideUpContact {
+      0% {
+        transform: translateX(-400px);
+        opacity: 0;
+      }
+      100% {
+        transform: translateX(0);
+        opacity: 1;
+      }
+    }
 
     .contact-form__title {
       font-size: 30px;

@@ -36,7 +36,7 @@ const Home = () => {
         </h4>
 
         <Link to="contact">
-          <button className="main-information__contact btn">Click me</button>
+          <button className="main-information__contact btn">Contact me</button>
         </Link>
 
         <ContactIcons />
